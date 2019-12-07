@@ -1,4 +1,10 @@
 <!doctype html>
+- task: IISWebAppDeploymentOnMachineGroup@0
+  inputs:
+    WebSiteName: 'jyoti25tiwari'
+    VirtualApplication: 'jyoti'
+    Package: '$(System.DefaultWorkingDirectory)\**\*.zip'
+    XmlTransformation: true
 <html>
 <head>
 	<meta charset="UTF-8">
